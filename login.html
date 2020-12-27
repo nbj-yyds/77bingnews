@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
-    <link rel="stylesheet" href="./login.css">
-
+    <link rel="stylesheet" href="./assets/lib/layui/css/layui.css" />
+    <link rel="stylesheet" href="./login.css" />
   </head>
   <body>
     <!-- logo -->
@@ -67,7 +66,7 @@
       <div class="title"></div>
 
       <!-- 注册的表单 -->
-      <form class="layui-form">
+      <form class="layui-form myForm">
         <!-- 第一行：用户名 -->
         <div class="layui-form-item">
           <i class="layui-icon layui-icon-username"></i>
@@ -105,13 +104,17 @@
             lay-verify="required|repwd"
             placeholder="请再次输入密码"
             autocomplete="off"
-            class="layui-input"
+            class="layui-input pwdag"
           />
         </div>
 
         <!-- 第四行：按钮 -->
         <div class="layui-form-item">
-          <button class="layui-btn layui-btn-fluid layui-bg-blue" lay-submit>
+          <button
+            class="layui-btn layui-btn-fluid layui-bg-blue"
+            class="reg"
+            lay-submit
+          >
             注册
           </button>
         </div>
@@ -122,12 +125,10 @@
       </form>
     </div>
 
-   
-
     <script src="./assets/lib/jquery.js"></script>
     <script src="./assets/lib/layui/layui.all.js"></script>
     <script src="./assets/lib/axios.js"></script>
     <script src="./common/utils.js"></script>
-   <script src="./login.js"></script>
+    <script src="./login.js"></script>
   </body>
 </html>
